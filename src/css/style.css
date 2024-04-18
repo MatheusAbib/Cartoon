@@ -1,0 +1,216 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1400px;
+    background-color: #B0E0E6	;
+    color: #333333;
+}
+
+/* Estilo para o modo escuro */
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background: linear-gradient(150deg, #9370DB	, #BA55D3	);
+    color: #fff;
+    align-items: center;
+    
+}
+
+/* Estilo para os elementos dentro do cabeçalho */
+header .logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0%; /*mudar o tamanho do conteudo do item*/
+    margin-left: 112px; /*colocar o item um pouco pro lado*/
+    
+}
+header .imagem-botao {
+    width: 50px;
+    transition: 0.1s ease-in-out;
+    align-items: center;
+    margin-right: 109px;
+}
+
+/* Estilo para o botão alterar tema */
+header #botao-alterar-tema {
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+
+header .logo .menu img{
+    transition: 0.1s ease-in-out;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+
+}
+
+
+
+/* Estilo de hover para os elementos do cabeçalho */
+header .logo:hover,
+header .imagem-botao:hover,
+header #botao-scroll:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Estilo para a seção principal */
+main {
+    padding: 25px;
+}
+
+/* Estilo para a lista de Pokémon */
+main .listagem-pokemon {
+    display: flex; /*faz os cards ficarem um ao lado do outro*/
+    flex-wrap: wrap; /*faz os cards ficarem um em baixo do outro*/
+    gap: 30px; /*espaçamento entre os cards*/
+    justify-content: center; /*deixar os cards centralizados*/
+}
+
+main .lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Estilo para os cartões de Pokémon */
+main .cartao-pokemon {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex; /*organiza os informçoes de dentro do card*/
+    flex-direction: column;
+    align-items: center; /*centraliza e o gap da espaçamento dentro do card*/
+    gap: 15px;
+    border-radius: 15px; /*borda dos cards*/
+    transition: 0.2s ease-in-out; /*transição ao passar o mouse por cima dos cards*/
+    cursor: pointer;
+}
+/* Estilo de hover para os cartões de Pokémon */
+main .cartao-pokemon:hover {
+    background-color: #96d9d6;
+    border-radius: 15px;
+    transform: scale(1.05);
+    /*é a cor e animação de passar o mouse por cima do card*/
+}
+
+/* Estilo para os cartões de Pokémon em modo escuro */
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8;
+}
+
+/* Estilo para as informações dentro dos cartões de Pokémon */
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+/* Estilo para os gifs dos Pokémon */
+main .cartao-pokemon .gif {
+    width: 80px;
+    height: 80px;
+}
+
+/* Estilo para os tipos dos Pokémon */
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* Estilo para os tipos específicos */
+.grama {
+    background-color: #7ac74c;
+}
+.planta {
+    background-color: #6B8E23	;
+}
+.cura {
+    background-color: #EE82EE;
+}
+.telecinese {
+    background-color: #6959CD;
+}
+.fusao {
+    background-color: #FF6347;
+}
+.protecao {
+    background-color: #FA8072;
+}
+.servente {
+    background-color: #D8BFD8;
+}
+.ataque {
+    background-color: #6959CD	;
+}
+.animal {
+    background-color: #FFE4C4;
+}
+.soldado {
+    background-color: #008B8B	;
+}
+.quartzo {
+    background-color: #DAA520	;
+}
+.veneno {
+    background-color: #FF0000;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.eletrico {
+    background-color: #FFD700;
+}
+
+/* Estilo para a descrição dos Pokémon */
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll; /*cria o maquinismo de rolagem*/
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/* Estilo para o botão de rolagem */
+#botao-scroll {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none; /* Removendo o outline */
+    
+}
